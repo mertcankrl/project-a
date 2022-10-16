@@ -209,7 +209,7 @@ video {
   .featured-services .service-item {
     padding: 30px;
     transition: all ease-in-out 0.4s;
-    background: rgba(22, 70, 93,0.2);
+    background: rgba(22, 70, 93,0.1);
     border-radius: 10px;
     height: 100%;
   }
@@ -224,6 +224,7 @@ video {
   .featured-services .service-item h4 a {
     color: rgba(22, 70, 93,0.8);
     transition: ease-in-out 0.3s;
+    text-decoration: none;
   }
   
   .featured-services .service-item p {
@@ -234,7 +235,7 @@ video {
   
   .featured-services .service-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0 60px 0 rgba(grey, 0.1);
+    box-shadow: 0px 0 60px 0 #666;
   }
   
   .featured-services .service-item:hover h4 a {
