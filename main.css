@@ -5,8 +5,31 @@ body{
     font-family: 'Montserrat', sans-serif;
     overflow: overlay;
 }
+.dark-mode {
+  background-color: rgba(34, 34, 34, 0.516);
+  color: #ecf0f1;
+  transition: all ease 0.8s;
+}
+.dark-mody{
+  float: inline-end;
+}
+.dark-mody:hover{
+    transition: ease-in 0.5s;
+    background: #fdb813;
+    opacity: 60%;
+    border-radius: 15px;
+}
 
-
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 /*--------------------------------------------------------------
   SCROLLBAR START 
   --------------------------------------------------------------*/
@@ -23,8 +46,6 @@ body{
     background: rgba(0, 0, 0, 0.2);
   }
 
-
-
 /*--------------------------------------------------------------
   COLORS
   --------------------------------------------------------------*/
@@ -35,7 +56,7 @@ body{
     color: #ecf0f1
 }
 .text-main1{
-    color: #227093 !important;
+    color: #227093 ;
 }
 .btn-main{
    background-color: #227093;
@@ -87,18 +108,6 @@ nav ul li{
     margin: 5px;
     letter-spacing: 0.5px;
     opacity: 0.7;
-}
-
-.line{
-    width: 0px;
-    height: 2px;
-    background-color: rgba(22, 70, 93,0.4);
-    visibility: hidden;
-    transition: all .5s ease;
-}
-a:hover + .line{
-    width: 100%;
-    visibility: visible;
 }
 
 :root .ouranimation{
@@ -203,6 +212,7 @@ video {
   HERO ANİMATED END 
   --------------------------------------------------------------*/
 
+  
   /*--------------------------------------------------------------
   Featured Services Section
   --------------------------------------------------------------*/
@@ -235,7 +245,7 @@ video {
   
   .featured-services .service-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0 60px 0 #666;
+    box-shadow: 0px 0 60px 0 #227093;
   }
   
   .featured-services .service-item:hover h4 a {
